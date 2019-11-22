@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33113FB8051E3B78FD68E580 /* libPods-Endicott Eats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A98220D4AC7D8AFA1314F5 /* libPods-Endicott Eats.a */; };
 		4D158427234660B400013029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D158426234660B400013029 /* AppDelegate.swift */; };
 		4D158429234660B400013029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D158428234660B400013029 /* SceneDelegate.swift */; };
 		4D15842B234660B400013029 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15842A234660B400013029 /* FirstViewController.swift */; };
-		4D15842D234660B400013029 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15842C234660B400013029 /* SecondViewController.swift */; };
+		4D15842D234660B400013029 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15842C234660B400013029 /* LoginViewController.swift */; };
 		4D158430234660B400013029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D15842E234660B400013029 /* Main.storyboard */; };
 		4D158432234660B500013029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D158431234660B500013029 /* Assets.xcassets */; };
 		4D158435234660B500013029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D158433234660B500013029 /* LaunchScreen.storyboard */; };
 		4D158440234660B500013029 /* Endicott_EatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15843F234660B500013029 /* Endicott_EatsTests.swift */; };
 		4D15844B234660B500013029 /* Endicott_EatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15844A234660B500013029 /* Endicott_EatsUITests.swift */; };
+		4D1584612346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
+		4D1584622346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
+		4D1584632346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
+		73AF7E1BEBAC7D9135B1437D /* libPods-Endicott EatsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87ED2FBA0CA077DD4F3568D /* libPods-Endicott EatsTests.a */; };
+		C7635E0CD371667292A65440 /* libPods-Endicott Eats-Endicott EatsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE0E6732994311497252DE7 /* libPods-Endicott Eats-Endicott EatsUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006F1CA7A91F9B700C800650 /* Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		23BFF40BF03C11C6CBAD7264 /* Pods-Endicott Eats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats.debug.xcconfig"; path = "Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats.debug.xcconfig"; sourceTree = "<group>"; };
+		47A98220D4AC7D8AFA1314F5 /* libPods-Endicott Eats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Endicott Eats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D158423234660B400013029 /* Endicott Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Endicott Eats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D158426234660B400013029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D158428234660B400013029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D15842A234660B400013029 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4D15842C234660B400013029 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4D15842C234660B400013029 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D15842F234660B400013029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D158431234660B500013029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D158434234660B500013029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,13 @@
 		4D158446234660B500013029 /* Endicott EatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Endicott EatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D15844A234660B500013029 /* Endicott_EatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endicott_EatsUITests.swift; sourceTree = "<group>"; };
 		4D15844C234660B500013029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D1584602346621D00013029 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		5E1D28B1EADD1D7161D74FAF /* Pods-Endicott EatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott EatsTests.debug.xcconfig"; path = "Target Support Files/Pods-Endicott EatsTests/Pods-Endicott EatsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AE0E6732994311497252DE7 /* libPods-Endicott Eats-Endicott EatsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Endicott Eats-Endicott EatsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		959E9F0B120B3C0C6FAF1724 /* Pods-Endicott Eats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats.release.xcconfig"; path = "Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats.release.xcconfig"; sourceTree = "<group>"; };
+		98E86C8441145B4D2B95445A /* Pods-Endicott Eats-Endicott EatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats-Endicott EatsUITests.release.xcconfig"; path = "Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B87ED2FBA0CA077DD4F3568D /* libPods-Endicott EatsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Endicott EatsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F20F42212A53D9257A3695 /* Pods-Endicott EatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott EatsTests.release.xcconfig"; path = "Target Support Files/Pods-Endicott EatsTests/Pods-Endicott EatsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33113FB8051E3B78FD68E580 /* libPods-Endicott Eats.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AF7E1BEBAC7D9135B1437D /* libPods-Endicott EatsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7635E0CD371667292A65440 /* libPods-Endicott Eats-Endicott EatsUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +104,8 @@
 				4D15843E234660B500013029 /* Endicott EatsTests */,
 				4D158449234660B500013029 /* Endicott EatsUITests */,
 				4D158424234660B400013029 /* Products */,
+				DEF8B9FDC6CB334B62E13982 /* Pods */,
+				6D905E684FAEEE6B4A46E56C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +125,11 @@
 				4D158426234660B400013029 /* AppDelegate.swift */,
 				4D158428234660B400013029 /* SceneDelegate.swift */,
 				4D15842A234660B400013029 /* FirstViewController.swift */,
-				4D15842C234660B400013029 /* SecondViewController.swift */,
+				4D15842C234660B400013029 /* LoginViewController.swift */,
 				4D15842E234660B400013029 /* Main.storyboard */,
 				4D158431234660B500013029 /* Assets.xcassets */,
 				4D158433234660B500013029 /* LaunchScreen.storyboard */,
+				4D1584602346621D00013029 /* GoogleService-Info-2.plist */,
 				4D158436234660B500013029 /* Info.plist */,
 			);
 			path = "Endicott Eats";
@@ -131,6 +153,29 @@
 			path = "Endicott EatsUITests";
 			sourceTree = "<group>";
 		};
+		6D905E684FAEEE6B4A46E56C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A98220D4AC7D8AFA1314F5 /* libPods-Endicott Eats.a */,
+				8AE0E6732994311497252DE7 /* libPods-Endicott Eats-Endicott EatsUITests.a */,
+				B87ED2FBA0CA077DD4F3568D /* libPods-Endicott EatsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEF8B9FDC6CB334B62E13982 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23BFF40BF03C11C6CBAD7264 /* Pods-Endicott Eats.debug.xcconfig */,
+				959E9F0B120B3C0C6FAF1724 /* Pods-Endicott Eats.release.xcconfig */,
+				006F1CA7A91F9B700C800650 /* Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig */,
+				98E86C8441145B4D2B95445A /* Pods-Endicott Eats-Endicott EatsUITests.release.xcconfig */,
+				5E1D28B1EADD1D7161D74FAF /* Pods-Endicott EatsTests.debug.xcconfig */,
+				D8F20F42212A53D9257A3695 /* Pods-Endicott EatsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D15844F234660B500013029 /* Build configuration list for PBXNativeTarget "Endicott Eats" */;
 			buildPhases = (
+				9564C3333BC090584C9F9AB8 /* [CP] Check Pods Manifest.lock */,
 				4D15841F234660B400013029 /* Sources */,
 				4D158420234660B400013029 /* Frameworks */,
 				4D158421234660B400013029 /* Resources */,
+				5B3A1571C13BA764BF89BA9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D158452234660B500013029 /* Build configuration list for PBXNativeTarget "Endicott EatsTests" */;
 			buildPhases = (
+				F838169F22AC1F79DF783FF4 /* [CP] Check Pods Manifest.lock */,
 				4D158437234660B500013029 /* Sources */,
 				4D158438234660B500013029 /* Frameworks */,
 				4D158439234660B500013029 /* Resources */,
@@ -173,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D158455234660B500013029 /* Build configuration list for PBXNativeTarget "Endicott EatsUITests" */;
 			buildPhases = (
+				D381BB5EDCDC598DCFE2648E /* [CP] Check Pods Manifest.lock */,
 				4D158442234660B500013029 /* Sources */,
 				4D158443234660B500013029 /* Frameworks */,
 				4D158444234660B500013029 /* Resources */,
+				94873AACC5546782A672DF1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +287,7 @@
 			files = (
 				4D158435234660B500013029 /* LaunchScreen.storyboard in Resources */,
 				4D158432234660B500013029 /* Assets.xcassets in Resources */,
+				4D1584612346621D00013029 /* GoogleService-Info-2.plist in Resources */,
 				4D158430234660B400013029 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1584622346621D00013029 /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,17 +304,121 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1584632346621D00013029 /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B3A1571C13BA764BF89BA9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94873AACC5546782A672DF1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9564C3333BC090584C9F9AB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Endicott Eats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D381BB5EDCDC598DCFE2648E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Endicott Eats-Endicott EatsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F838169F22AC1F79DF783FF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Endicott EatsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D15841F234660B400013029 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D15842D234660B400013029 /* SecondViewController.swift in Sources */,
+				4D15842D234660B400013029 /* LoginViewController.swift in Sources */,
 				4D15842B234660B400013029 /* FirstViewController.swift in Sources */,
 				4D158427234660B400013029 /* AppDelegate.swift in Sources */,
 				4D158429234660B400013029 /* SceneDelegate.swift in Sources */,
@@ -436,6 +592,7 @@
 		};
 		4D158450234660B500013029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BFF40BF03C11C6CBAD7264 /* Pods-Endicott Eats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +610,7 @@
 		};
 		4D158451234660B500013029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959E9F0B120B3C0C6FAF1724 /* Pods-Endicott Eats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +628,7 @@
 		};
 		4D158453234660B500013029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1D28B1EADD1D7161D74FAF /* Pods-Endicott EatsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +650,7 @@
 		};
 		4D158454234660B500013029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F20F42212A53D9257A3695 /* Pods-Endicott EatsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +672,7 @@
 		};
 		4D158456234660B500013029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006F1CA7A91F9B700C800650 /* Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +692,7 @@
 		};
 		4D158457234660B500013029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E86C8441145B4D2B95445A /* Pods-Endicott Eats-Endicott EatsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

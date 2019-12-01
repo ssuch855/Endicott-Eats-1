@@ -17,11 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        // Get a reference to the storage service using the default Firebase App
-        let storage = Storage.storage()
-
-        // Create a storage reference from our storage service
-        let storageRef = storage.reference()
         return true
     }
 

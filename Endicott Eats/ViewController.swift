@@ -52,7 +52,7 @@ extension ViewController: FUIAuthDelegate {
         guard error == nil else {
             return
         }
-        let uid = authDataResult?.user.uid
+        //let uid = authDataResult?.user.uid
         performSegue(withIdentifier: "goHome", sender: self)
         
     }

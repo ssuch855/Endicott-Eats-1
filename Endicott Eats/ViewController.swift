@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Firebase Auth Demo"
+        title = "Login"
     }
 
     @IBAction func loginTapped(_ sender: UIButton) {

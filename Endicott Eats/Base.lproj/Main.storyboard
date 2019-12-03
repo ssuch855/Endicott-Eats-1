@@ -28,6 +28,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="BlZ-dy-Nac"/>
                     </view>
+                    <navigationItem key="navigationItem" id="s3q-zu-W6l"/>
                     <connections>
                         <segue destination="5o6-gN-s1N" kind="show" identifier="goHome" id="KIZ-Ub-xhI"/>
                     </connections>
@@ -36,34 +37,22 @@
             </objects>
             <point key="canvasLocation" x="12" y="892"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="var-Ew-D15">
             <objects>
-                <viewController id="5o6-gN-s1N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hfv-fb-tKe">
+                <viewController id="5o6-gN-s1N" customClass="MainViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfv-fb-tKe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcF-0a-G8R">
-                                <rect key="frame" x="163.5" y="409" width="87" height="24"/>
-                                <accessibility key="accessibilityConfiguration" identifier="welcome"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="BcF-0a-G8R" firstAttribute="centerX" secondItem="Hfv-fb-tKe" secondAttribute="centerX" id="0vQ-bf-imd"/>
-                            <constraint firstItem="BcF-0a-G8R" firstAttribute="centerY" secondItem="Hfv-fb-tKe" secondAttribute="centerY" id="ZbN-5I-FvZ"/>
-                        </constraints>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="wd0-IU-a9O"/>
                     </view>
                     <navigationItem key="navigationItem" id="d10-bn-6So"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhj-FZ-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="889"/>
+            <point key="canvasLocation" x="702.89855072463774" y="888.61607142857144"/>
         </scene>
     </scenes>
 </document>

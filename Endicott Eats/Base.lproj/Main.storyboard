@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="ded-3o-cBg" customClass="OrderViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8rl-7L-c9Y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5Lx-BH-CQZ"/>
@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="s3q-zu-W6l"/>
                     <connections>
-                        <segue destination="gsg-BM-dai" kind="show" identifier="goHome" id="KIZ-Ub-xhI"/>
+                        <segue destination="gsg-BM-dai" kind="presentation" identifier="goHome" modalPresentationStyle="fullScreen" id="KIZ-Ub-xhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQJ-4p-eSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -58,7 +58,7 @@
             <objects>
                 <viewController id="LTM-Va-djd" customClass="myOrdersViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mDQ-aC-Nb3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JXE-DS-jfB"/>
@@ -72,9 +72,10 @@
         <!--Order-->
         <scene sceneID="var-Ew-D15">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhj-FZ-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="5o6-gN-s1N" customClass="MainViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfv-fb-tKe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                    <view key="view" contentMode="scaleToFill" id="Hfv-fb-tKe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -82,29 +83,58 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="4ry-me-Mbj"/>
                     <navigationItem key="navigationItem" id="d10-bn-6So"/>
-                    <connections>
-                        <segue destination="ded-3o-cBg" kind="show" id="x4Z-gu-J0b"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhj-FZ-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="1158"/>
+            <point key="canvasLocation" x="416" y="1703"/>
         </scene>
         <!--My Account-->
         <scene sceneID="jvf-Lc-Ux7">
             <objects>
                 <viewController id="xG7-Z5-UJF" customClass="myAccountViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OvP-Ka-7RV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Vnn-gy-aIy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Account" image="ic_anonymous.png" id="SFy-KX-UKX"/>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person.crop.circle" catalog="system" id="SFy-KX-UKX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxH-M0-HEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="506"/>
+        </scene>
+        <!--Order-->
+        <scene sceneID="Prs-ur-r28">
+            <objects>
+                <tableViewController id="RxR-td-am6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncN-Q4-c1I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="XCU-WS-Eeb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XCU-WS-Eeb" id="HkP-eg-ogZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RxR-td-am6" id="PfA-MI-0FG"/>
+                            <outlet property="delegate" destination="RxR-td-am6" id="Ohw-xE-jQ6"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="cZE-4c-ZzU"/>
+                    <connections>
+                        <segue destination="ded-3o-cBg" kind="presentation" modalPresentationStyle="fullScreen" id="mPW-kv-xwC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wl-vo-mLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="1180"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IcE-yN-cg9">
@@ -117,8 +147,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5o6-gN-s1N" kind="relationship" relationship="viewControllers" id="uXp-Om-zak"/>
                         <segue destination="xG7-Z5-UJF" kind="relationship" relationship="viewControllers" id="lZl-7P-cAR"/>
+                        <segue destination="RxR-td-am6" kind="relationship" relationship="viewControllers" id="duN-AO-KMN"/>
                         <segue destination="LTM-Va-djd" kind="relationship" relationship="viewControllers" id="NPZ-gJ-ff8"/>
                     </connections>
                 </tabBarController>
@@ -129,7 +159,7 @@
     </scenes>
     <resources>
         <image name="doc.text" catalog="system" width="56" height="64"/>
-        <image name="ic_anonymous.png" width="24" height="24"/>
+        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
     </resources>
 </document>

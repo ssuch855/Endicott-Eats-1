@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Order View Controller-->
+        <scene sceneID="1mq-Jq-y9S">
+            <objects>
+                <viewController id="ded-3o-cBg" customClass="OrderViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8rl-7L-c9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5Lx-BH-CQZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BkN-Zq-nFH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yVB-Ds-rz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2667" y="1158"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="7Pf-zG-ifp">
             <objects>
@@ -30,29 +46,90 @@
                     </view>
                     <navigationItem key="navigationItem" id="s3q-zu-W6l"/>
                     <connections>
-                        <segue destination="5o6-gN-s1N" kind="show" identifier="goHome" id="KIZ-Ub-xhI"/>
+                        <segue destination="gsg-BM-dai" kind="show" identifier="goHome" id="KIZ-Ub-xhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQJ-4p-eSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12" y="892"/>
         </scene>
-        <!--Main View Controller-->
+        <!--My Orders-->
+        <scene sceneID="uzr-PO-EPy">
+            <objects>
+                <viewController id="LTM-Va-djd" customClass="myOrdersViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mDQ-aC-Nb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JXE-DS-jfB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Orders" image="doc.text" catalog="system" id="lPL-5K-ehN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M10-Z2-bqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="1880"/>
+        </scene>
+        <!--Order-->
         <scene sceneID="var-Ew-D15">
             <objects>
                 <viewController id="5o6-gN-s1N" customClass="MainViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfv-fb-tKe">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfv-fb-tKe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="wd0-IU-a9O"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="4ry-me-Mbj"/>
                     <navigationItem key="navigationItem" id="d10-bn-6So"/>
+                    <connections>
+                        <segue destination="ded-3o-cBg" kind="show" id="x4Z-gu-J0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhj-FZ-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="1158"/>
+        </scene>
+        <!--My Account-->
+        <scene sceneID="jvf-Lc-Ux7">
+            <objects>
+                <viewController id="xG7-Z5-UJF" customClass="myAccountViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OvP-Ka-7RV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Vnn-gy-aIy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Account" image="ic_anonymous.png" id="SFy-KX-UKX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RxH-M0-HEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="506"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IcE-yN-cg9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gsg-BM-dai" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="irU-W0-ccm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NRo-dn-o6H">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5o6-gN-s1N" kind="relationship" relationship="viewControllers" id="uXp-Om-zak"/>
+                        <segue destination="xG7-Z5-UJF" kind="relationship" relationship="viewControllers" id="lZl-7P-cAR"/>
+                        <segue destination="LTM-Va-djd" kind="relationship" relationship="viewControllers" id="NPZ-gJ-ff8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzM-vj-HXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="888.61607142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doc.text" catalog="system" width="56" height="64"/>
+        <image name="ic_anonymous.png" width="24" height="24"/>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
 </document>

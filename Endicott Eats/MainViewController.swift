@@ -11,25 +11,47 @@ import Firebase
 
 class MainViewController : UIViewController {
     
+    var Callahan: [String:Any] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let db = Firestore.firestore()
         
-        db.collection("menus").getDocuments { (snapshot, error) in
-            
-            if error == nil && snapshot != nil {
-                
-                for document in snapshot!.documents {
-                    
-                    let documentData = document.data()
-                    
-                }
-                
+        db.collection("menus").document("Callahan").getDocument { (document, error) in
+            if error == nil && document != nil {
+                self.Callahan = document!.data()!
             }
         }
+
+        print(Callahan)
         
-        title = "Home"
+        
+//        db.collection("menus").document("Callahan").getDocument { (document, error) in
+//            if error == nil && document != nil {
+//                //let Callahan = document!.data()
+//            }
+//        }
+//
+//        db.collection("menus").document("Callahan").getDocument { (document, error) in
+//            if error == nil && document != nil {
+//                let Callahan = document!.data()
+//            }
+//        }
+        
+
+        
+//        db.collection("menus").document("Callahan").getDocument { (document, error) in
+//
+//            if error == nil && document != nil {
+//
+//                var callahanData: [String:Any] = document!.data()
+//                    print(documentData)
+//
+//            }
+//        }
+        
+        
     }
     
     @IBAction func addTouched(_ sender: UITapGestureRecognizer) {

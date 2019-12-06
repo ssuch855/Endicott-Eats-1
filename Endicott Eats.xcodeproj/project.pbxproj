@@ -18,6 +18,9 @@
 		4D1584612346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
 		4D1584622346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
 		4D1584632346621D00013029 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D1584602346621D00013029 /* GoogleService-Info-2.plist */; };
+		4D66C313239AD2A8007DBAE5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */; };
+		4D66C315239AD53A007DBAE5 /* myOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */; };
+		4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C316239AD586007DBAE5 /* myAccountViewController.swift */; };
 		4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC32AC238C239500C7EC50 /* ViewController.swift */; };
 		4DCE80DF2395B4610049B5BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE80DE2395B4610049B5BC /* MainViewController.swift */; };
 		7A2CEB3DA3763B0339EC4D83 /* Pods_Endicott_EatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509CF68164CC333D04AB6E6F /* Pods_Endicott_EatsTests.framework */; };
@@ -58,6 +61,9 @@
 		4D15844A234660B500013029 /* Endicott_EatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endicott_EatsUITests.swift; sourceTree = "<group>"; };
 		4D15844C234660B500013029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1584602346621D00013029 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOrdersViewController.swift; sourceTree = "<group>"; };
+		4D66C316239AD586007DBAE5 /* myAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAccountViewController.swift; sourceTree = "<group>"; };
 		4DBC32AC238C239500C7EC50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DCE80DE2395B4610049B5BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		509CF68164CC333D04AB6E6F /* Pods_Endicott_EatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Endicott_EatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,9 @@
 				4DBC32AC238C239500C7EC50 /* ViewController.swift */,
 				4D15842E234660B400013029 /* Main.storyboard */,
 				4DCE80DE2395B4610049B5BC /* MainViewController.swift */,
+				4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */,
+				4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */,
+				4D66C316239AD586007DBAE5 /* myAccountViewController.swift */,
 				4D158431234660B500013029 /* Assets.xcassets */,
 				4D158433234660B500013029 /* LaunchScreen.storyboard */,
 				4D1584602346621D00013029 /* GoogleService-Info-2.plist */,
@@ -458,9 +467,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */,
+				4D66C315239AD53A007DBAE5 /* myOrdersViewController.swift in Sources */,
+				4D66C313239AD2A8007DBAE5 /* OrderViewController.swift in Sources */,
 				4D158427234660B400013029 /* AppDelegate.swift in Sources */,
 				4D158429234660B400013029 /* SceneDelegate.swift in Sources */,
 				4DCE80DF2395B4610049B5BC /* MainViewController.swift in Sources */,
+				4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,22 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Order View Controller-->
-        <scene sceneID="1mq-Jq-y9S">
-            <objects>
-                <viewController id="ded-3o-cBg" customClass="OrderViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8rl-7L-c9Y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="5Lx-BH-CQZ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BkN-Zq-nFH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yVB-Ds-rz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2667" y="1158"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="7Pf-zG-ifp">
             <objects>
@@ -53,6 +37,83 @@
             </objects>
             <point key="canvasLocation" x="12" y="892"/>
         </scene>
+        <!--Order-->
+        <scene sceneID="LoO-Wk-Hr1">
+            <objects>
+                <tableViewController id="LO5-I6-ak5" customClass="OrderViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="azD-OV-j9n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="callahanCell" rowHeight="106" id="AEX-yo-zW1">
+                                <rect key="frame" x="0.0" y="28" width="414" height="106"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AEX-yo-zW1" id="s5B-dA-bgp">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="106"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Callahan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhM-cN-w5Z" userLabel="label">
+                                            <rect key="frame" x="179" y="39" width="184" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callahan" id="IpV-il-4E4">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="106"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="IhM-cN-w5Z" firstAttribute="top" secondItem="s5B-dA-bgp" secondAttribute="top" constant="39" id="PwT-qw-dDm"/>
+                                        <constraint firstAttribute="trailing" secondItem="IhM-cN-w5Z" secondAttribute="trailing" constant="20" symbolic="YES" id="g12-S8-rjd"/>
+                                        <constraint firstAttribute="bottom" secondItem="IhM-cN-w5Z" secondAttribute="bottom" constant="38" id="j8z-3p-Ckr"/>
+                                        <constraint firstItem="IhM-cN-w5Z" firstAttribute="leading" secondItem="IpV-il-4E4" secondAttribute="trailing" constant="8" symbolic="YES" id="ys2-Hl-gb0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LO5-I6-ak5" id="9J6-Wc-R5b"/>
+                            <outlet property="delegate" destination="LO5-I6-ak5" id="bkb-N7-9ll"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="6fo-3C-XxQ"/>
+                    <connections>
+                        <segue destination="Eqa-k3-2Yg" kind="presentation" identifier="goToMenu" modalPresentationStyle="fullScreen" id="JdV-ME-qK6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqw-Zi-4aG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="1180.5803571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqh-gh-8lr">
+            <objects>
+                <viewController id="Eqa-k3-2Yg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="njg-lm-IVV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="delete.left.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wwU-vi-pZl">
+                                <rect key="frame" x="23" y="52" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ilb-UR-IRi"/>
+                    </view>
+                    <connections>
+                        <segue destination="LO5-I6-ak5" kind="presentation" identifier="goBack" modalPresentationStyle="fullScreen" id="NKb-Xo-S1N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJv-Wc-ivk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2486.9565217391305" y="1181.9196428571429"/>
+        </scene>
         <!--My Orders-->
         <scene sceneID="uzr-PO-EPy">
             <objects>
@@ -60,7 +121,18 @@
                     <view key="view" contentMode="scaleToFill" id="mDQ-aC-Nb3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-3K-nIO">
+                                <rect key="frame" x="171.5" y="44" width="71" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J5X-3K-nIO" firstAttribute="centerX" secondItem="mDQ-aC-Nb3" secondAttribute="centerX" id="agW-AE-bPr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JXE-DS-jfB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Orders" image="doc.text" catalog="system" id="lPL-5K-ehN"/>
@@ -69,24 +141,6 @@
             </objects>
             <point key="canvasLocation" x="1590" y="1880"/>
         </scene>
-        <!--Order-->
-        <scene sceneID="var-Ew-D15">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhj-FZ-ngV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="5o6-gN-s1N" customClass="MainViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hfv-fb-tKe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="wd0-IU-a9O"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="4ry-me-Mbj"/>
-                    <navigationItem key="navigationItem" id="d10-bn-6So"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="416" y="1703"/>
-        </scene>
         <!--My Account-->
         <scene sceneID="jvf-Lc-Ux7">
             <objects>
@@ -94,7 +148,18 @@
                     <view key="view" contentMode="scaleToFill" id="OvP-Ka-7RV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-fo-oj1">
+                                <rect key="frame" x="163.5" y="44" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ja-fo-oj1" firstAttribute="centerX" secondItem="OvP-Ka-7RV" secondAttribute="centerX" id="aBb-GG-B6G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vnn-gy-aIy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Account" image="person.crop.circle" catalog="system" id="SFy-KX-UKX"/>
@@ -103,39 +168,6 @@
             </objects>
             <point key="canvasLocation" x="1590" y="506"/>
         </scene>
-        <!--Order-->
-        <scene sceneID="Prs-ur-r28">
-            <objects>
-                <tableViewController id="RxR-td-am6" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncN-Q4-c1I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="XCU-WS-Eeb">
-                                <rect key="frame" x="0.0" y="28" width="414" height="108"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XCU-WS-Eeb" id="HkP-eg-ogZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="RxR-td-am6" id="PfA-MI-0FG"/>
-                            <outlet property="delegate" destination="RxR-td-am6" id="Ohw-xE-jQ6"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Order" image="square.and.pencil" catalog="system" id="cZE-4c-ZzU"/>
-                    <connections>
-                        <segue destination="ded-3o-cBg" kind="presentation" modalPresentationStyle="fullScreen" id="mPW-kv-xwC"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6wl-vo-mLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1590" y="1180"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IcE-yN-cg9">
             <objects>
@@ -143,13 +175,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="irU-W0-ccm"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NRo-dn-o6H">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xG7-Z5-UJF" kind="relationship" relationship="viewControllers" id="lZl-7P-cAR"/>
-                        <segue destination="RxR-td-am6" kind="relationship" relationship="viewControllers" id="duN-AO-KMN"/>
-                        <segue destination="LTM-Va-djd" kind="relationship" relationship="viewControllers" id="NPZ-gJ-ff8"/>
+                        <segue destination="LTM-Va-djd" kind="relationship" relationship="viewControllers" id="30M-KO-Eub"/>
+                        <segue destination="xG7-Z5-UJF" kind="relationship" relationship="viewControllers" id="Orf-vl-mXg"/>
+                        <segue destination="LO5-I6-ak5" kind="relationship" relationship="viewControllers" id="d3q-x4-0eI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JzM-vj-HXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,8 +191,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="callahan" width="275" height="183"/>
+        <image name="delete.left.fill" catalog="system" width="64" height="52"/>
         <image name="doc.text" catalog="system" width="56" height="64"/>
         <image name="person.crop.circle" catalog="system" width="64" height="60"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JdV-ME-qK6"/>
+        <segue reference="NKb-Xo-S1N"/>
+    </inferredMetricsTieBreakers>
 </document>

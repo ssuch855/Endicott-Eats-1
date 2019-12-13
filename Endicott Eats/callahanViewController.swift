@@ -16,4 +16,7 @@ class callahanViewController : UIViewController {
         
     }
     
+    @IBAction func buttonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "goBack", sender: self)
+    }
 }

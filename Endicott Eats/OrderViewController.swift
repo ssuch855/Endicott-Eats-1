@@ -19,14 +19,31 @@ class OrderViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "callahanCell", for: indexPath)
-        
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "callahanCell")
+            // Set up cell.label
+            return cell!
+        } else if indexPath.row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "einsteinCell")
+            // Set up cell.button
+            return cell!
+        } else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "lodgeCell")
+            // Set up cell.button
+            return cell!
+        }
     }
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "callahanCell", for: indexPath)
+//
+//        return cell
+//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "goToMenu", sender: self)

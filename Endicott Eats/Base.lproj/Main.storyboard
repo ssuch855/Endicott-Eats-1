@@ -266,7 +266,6 @@
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JdV-ME-qK6"/>
         <segue reference="Kad-x1-Gqh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,13 +13,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = "Login"
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "goHome", sender: self)
+            return
+        }
+    }
+    
     @IBAction func loginTapped(_ sender: UIButton) {
         
         // Get the default Auth UI Object
+
+        
         let authUI = FUIAuth.defaultAuthUI()
         
         guard authUI != nil else {
@@ -47,12 +55,33 @@ extension ViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         
         //  Check if there was an error
-        
         //  guard is like saying if error == nil then do nothing else { Log the error and then return }
         guard error == nil else {
             return
         }
-        //let uid = authDataResult?.user.uid
+        
+        let uid = authDataResult?.user.uid
+        let email = authDataResult?.user.email
+        
+        let db = Firestore.firestore()
+        let docRef = db.collection("Users").document("\(String(describing: uid))")
+
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                return
+            } else {
+                db.collection("Users").document(uid!).setData([
+                    "email": email!,
+                    "isDriver": false
+                ]) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                    }
+                }
+            }
+        }
         performSegue(withIdentifier: "goHome", sender: self)
         
     }

@@ -12,7 +12,7 @@ import Firebase
 class OrderViewController : UITableViewController {
     
     
-    var Callahan: [String:Any] = [:]
+    //var Callahan: [String:Any] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,51 +38,10 @@ class OrderViewController : UITableViewController {
         }
     }
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "callahanCell", for: indexPath)
-//
-//        return cell
-//    }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "goToMenu", sender: self)
     }
     
+    
+    
 }
-
-
-
-//        let db = Firestore.firestore()
-//
-//        db.collection("menus").document("Callahan").getDocument { (document, error) in
-//            if error == nil && document != nil {
-//                self.Callahan = document!.data()!
-//            }
-//        }
-//
-//        print(Callahan)
-        
-//        db.collection("menus").document("Callahan").getDocument { (document, error) in
-//            if error == nil && document != nil {
-//                //let Callahan = document!.data()
-//            }
-//        }
-//
-//        db.collection("menus").document("Callahan").getDocument { (document, error) in
-//            if error == nil && document != nil {
-//                let Callahan = document!.data()
-//            }
-//        }
-        
-
-        
-//        db.collection("menus").document("Callahan").getDocument { (document, error) in
-//
-//            if error == nil && document != nil {
-//
-//                var callahanData: [String:Any] = document!.data()
-//                    print(documentData)
-//
-//            }
-//        }

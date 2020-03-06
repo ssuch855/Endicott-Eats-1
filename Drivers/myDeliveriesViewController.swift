@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class myAccountViewController : UIViewController {
+class myDeliveriesViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

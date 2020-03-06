@@ -49,12 +49,25 @@ class callahanViewController : UIViewController {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
+                    let dataDescription = document.data()
+                    self.callahanData = dataDescription as [String: Any]
                 }
             }
         }
         
     }
+    
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "food_cell")
+//            // Set up cell.label
+//            //cell?.textLabel?.text = (callahanData["Name"] as! String)
+//            return cell!
+//
+//    }
     
     @IBAction func buttonTapped(_ sender: Any) {
         performSegue(withIdentifier: "goBack", sender: self)

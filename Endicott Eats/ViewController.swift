@@ -18,7 +18,24 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "goHome", sender: self)
+            let db = Firestore.firestore()
+            let uid = Auth.auth().currentUser?.uid
+            let docRef = db.collection("Users").document(uid!)
+
+            docRef.getDocument { (document, error) in
+                if let document = document, document.exists {
+                    let dataDescription = document.data()
+                    let isDriver = dataDescription!["isDriver"] as! Int?
+                    if (isDriver == 1){
+                        self.performSegue(withIdentifier: "goDriverHome", sender: self)
+                    }
+                    else{
+                        self.performSegue(withIdentifier: "goCustomerHome", sender: self)
+                    }
+                } else {
+                    print("Document does not exist")
+                }
+            }
             return
         }
     }
@@ -82,7 +99,23 @@ extension ViewController: FUIAuthDelegate {
                 }
             }
         }
-        performSegue(withIdentifier: "goHome", sender: self)
         
+        let docRef2 = db.collection("Users").document(uid!)
+
+        docRef2.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let dataDescription = document.data()
+                let isDriver = dataDescription!["isDriver"] as! Int?
+                if (isDriver == 1){
+                    self.performSegue(withIdentifier: "goDriverHome", sender: self)
+                }
+                else{
+                    self.performSegue(withIdentifier: "goCustomerHome", sender: self)
+                }
+            } else {
+                print("Document does not exist")
+            }
+        }
+        self.performSegue(withIdentifier: "goCustomerHome", sender: self)
     }
 }

@@ -326,7 +326,7 @@
         <!--My Deliveries-->
         <scene sceneID="rKC-70-aSy">
             <objects>
-                <viewController id="ur0-w6-zrS" customClass="myDeliveriesViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ur0-w6-zrS" customClass="myDeliveriesViewController" customModule="Endicott_Eats" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSK-9F-4br">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,31 +352,33 @@
         <!--My Account-->
         <scene sceneID="qaH-ep-wXH">
             <objects>
-                <viewController id="HP9-Q3-j4v" customClass="myDeliveryAccountViewController" sceneMemberID="viewController">
+                <viewController id="HP9-Q3-j4v" customClass="myDeliveryAccountViewController" customModule="Endicott_Eats" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTu-6Z-QO1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnE-kE-Rgg">
-                                <rect key="frame" x="127" y="433" width="141" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh9-by-jXX">
+                                <rect key="frame" x="136" y="469" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Driver">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="driverTapped:" destination="HP9-Q3-j4v" eventType="touchUpInside" id="R6R-8H-LIh"/>
+                                    <action selector="driverTapped:" destination="HP9-Q3-j4v" eventType="touchUpInside" id="Xoi-6R-LYz"/>
+                                    <action selector="driverTapped:" destination="xG7-Z5-UJF" eventType="touchUpInside" id="Z5x-QF-RJy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aot-sC-Jnz">
-                                <rect key="frame" x="127" y="339" width="141" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUt-vn-JyO">
+                                <rect key="frame" x="137" y="377" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="signOut:" destination="HP9-Q3-j4v" eventType="touchUpInside" id="a7o-cl-m7h"/>
+                                    <action selector="signOut:" destination="xG7-Z5-UJF" eventType="touchUpInside" id="Rrg-P5-cbI"/>
+                                    <action selector="signOut:" destination="HP9-Q3-j4v" eventType="touchUpInside" id="pzn-7E-552"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -384,10 +386,13 @@
                         <viewLayoutGuide key="safeArea" id="b1N-KU-hGQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Account" image="person.crop.circle" catalog="system" id="sCc-Qe-dwT"/>
+                    <connections>
+                        <segue destination="8OO-Me-sY4" kind="presentation" identifier="Sign Out" modalPresentationStyle="overFullScreen" id="Q0y-7p-r9u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bmk-62-zDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="1133"/>
+            <point key="canvasLocation" x="1631.8840579710147" y="1132.3660714285713"/>
         </scene>
     </scenes>
     <resources>
@@ -401,5 +406,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Kad-x1-Gqh"/>
+        <segue reference="Q0y-7p-r9u"/>
     </inferredMetricsTieBreakers>
 </document>

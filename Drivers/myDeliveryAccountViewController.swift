@@ -16,6 +16,7 @@ class myDeliveryAccountViewController : UIViewController {
         
     }
     
+    
     @IBAction func driverTapped(_ sender: UIButton) {
         let user = Auth.auth().currentUser
         if let user = user {
@@ -33,6 +34,7 @@ class myDeliveryAccountViewController : UIViewController {
         }
     }
     
+    
     @IBAction func signOut(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         do {
@@ -41,6 +43,6 @@ class myDeliveryAccountViewController : UIViewController {
         } catch let signOutError as NSError {
           print ("Error signing out: %@", signOutError)
         }
-        
     }
+    
 }

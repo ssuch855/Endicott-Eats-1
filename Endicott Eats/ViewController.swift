@@ -81,9 +81,10 @@ extension ViewController: FUIAuthDelegate {
         let email = authDataResult?.user.email
         
         let db = Firestore.firestore()
-        let docRef = db.collection("Users").document("\(String(describing: uid))")
+        let docRef = db.collection("Users").document(uid!)
 
         docRef.getDocument { (document, error) in
+            let document = document
             if let document = document, document.exists {
                 return
             } else {
@@ -116,6 +117,5 @@ extension ViewController: FUIAuthDelegate {
                 print("Document does not exist")
             }
         }
-        self.performSegue(withIdentifier: "goCustomerHome", sender: self)
     }
 }

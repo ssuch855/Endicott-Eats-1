@@ -11,9 +11,6 @@ import Firebase
 
 class OrderViewController : UITableViewController {
     
-    
-    //var Callahan: [String:Any] = [:]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,7 +36,15 @@ class OrderViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToMenu", sender: self)
+        if (indexPath.row == 0){
+            self.performSegue(withIdentifier: "goToEinsteinsMenu", sender: self)
+        }
+        else if (indexPath.row == 1){
+            self.performSegue(withIdentifier: "goToCallahanMenu", sender: self)
+        }
+        else if (indexPath.row == 2){
+            self.performSegue(withIdentifier: "goToLodgeMenu", sender: self)
+        }
     }
     
     

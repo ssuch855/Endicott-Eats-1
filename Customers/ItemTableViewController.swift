@@ -11,6 +11,22 @@ import Firebase
 
 class ItemTableViewController: UITableViewController {
     
+    class Order{
+        var items = [Item]()
+        var diningOption: String
+        var deliveryLocation: String
+        var customer: String
+        var deliveryPerson: String
+        
+        init(items: [Item], diningOption: String, customer: String, deliveryLocation: String) {
+            self.items = items
+            self.diningOption = diningOption
+            self.deliveryLocation = deliveryLocation
+            self.customer = customer
+            self.deliveryPerson = "None"
+        }
+    }
+    
     class Item{
         var name: String
         var price: String
@@ -21,7 +37,7 @@ class ItemTableViewController: UITableViewController {
         }
     }
     
-    var callahanData = [Item]()
+    var diningData = [Item]()
     var diningOption : String?
     var cart = [Item]()
     @IBOutlet var table: UITableView!
@@ -42,7 +58,7 @@ class ItemTableViewController: UITableViewController {
                     let name = dataDescription["Name"] as? String ?? " "
                     let price = dataDescription["Price"] as? String ?? " "
                     
-                    self.callahanData.append(Item.init(name: name, price: price))
+                    self.diningData.append(Item.init(name: name, price: price))
                 }
             }
             self.table.reloadData()
@@ -57,7 +73,7 @@ class ItemTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.callahanData.count
+        return self.diningData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,8 +82,8 @@ class ItemTableViewController: UITableViewController {
         }
 
         // Configure the cell...
-        cell.Name.text = self.callahanData[indexPath.row].name
-        cell.Price.text = String(self.callahanData[indexPath.row].price)
+        cell.Name.text = self.diningData[indexPath.row].name
+        cell.Price.text = String(self.diningData[indexPath.row].price)
 
 
         return cell
@@ -78,6 +94,13 @@ class ItemTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cart.append(callahanData[indexPath.row])
+        cart.append(diningData[indexPath.row])
+    }
+    
+    @IBAction func checkoutTapped(_ sender: UIBarButtonItem) {
+        for item in cart{
+            print(item.name + ": " + item.price)
+        }
+        Order.init(items: cart, diningOption: diningOption!, customer: (Auth.auth().currentUser?.uid)!, deliveryLocation: "Marblehead 202")
     }
 }

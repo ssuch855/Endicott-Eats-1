@@ -36,15 +36,21 @@ class OrderViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        let display : ItemTableViewController = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "goToCallahanMenu") as? ItemTableViewController)!
+        display.modalPresentationStyle = .fullScreen
         if (indexPath.row == 0){
-            self.performSegue(withIdentifier: "goToEinsteinsMenu", sender: self)
+            display.diningOption = "Einsteins"
         }
         else if (indexPath.row == 1){
-            self.performSegue(withIdentifier: "goToCallahanMenu", sender: self)
+            display.diningOption = "Callahan"
         }
         else if (indexPath.row == 2){
-            self.performSegue(withIdentifier: "goToLodgeMenu", sender: self)
+            display.diningOption = "Lodge"
         }
+        self.present(display, animated: true, completion: nil)
+
     }
     
     

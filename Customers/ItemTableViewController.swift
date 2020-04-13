@@ -11,32 +11,6 @@ import Firebase
 
 class ItemTableViewController: UITableViewController {
     
-    class Order{
-        var items = [Item]()
-        var diningOption: String
-        var deliveryLocation: String
-        var customer: String
-        var deliveryPerson: String
-        
-        init(items: [Item], diningOption: String, customer: String, deliveryLocation: String) {
-            self.items = items
-            self.diningOption = diningOption
-            self.deliveryLocation = deliveryLocation
-            self.customer = customer
-            self.deliveryPerson = "None"
-        }
-    }
-    
-    class Item{
-        var name: String
-        var price: String
-        
-        init(name: String, price: String){
-            self.name = name
-            self.price = price
-        }
-    }
-    
     var diningData = [Item]()
     var diningOption : String?
     var cart = [Item]()
@@ -49,7 +23,7 @@ class ItemTableViewController: UITableViewController {
         
         let db = Firestore.firestore()
         
-        db.collection(diningOption!).getDocuments() { (querySnapshot, err) in
+        db.collection(diningOption ?? "Callahan").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -98,9 +72,10 @@ class ItemTableViewController: UITableViewController {
     }
     
     @IBAction func checkoutTapped(_ sender: UIBarButtonItem) {
-        for item in cart{
-            print(item.name + ": " + item.price)
-        }
-        Order.init(items: cart, diningOption: diningOption!, customer: (Auth.auth().currentUser?.uid)!, deliveryLocation: "Marblehead 202")
+        let display : CartTableViewController = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "goToCheckOut") as? CartTableViewController)!
+        display.modalPresentationStyle = .fullScreen
+        display.cart = cart
+        display.diningOption = diningOption
+        self.present(display, animated: true, completion: nil)
     }
 }

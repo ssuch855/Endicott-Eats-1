@@ -26,6 +26,10 @@
 		4DF312BF23E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
 		4DF312C023E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
 		4DF312C123E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
+		4DFB5EF32443FDDC00111220 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */; };
+		4DFB5EF52443FDEF00111220 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB5EF42443FDEF00111220 /* CartTableViewController.swift */; };
+		4DFB5EF7244405F800111220 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB5EF6244405F800111220 /* Order.swift */; };
+		4DFB5EF9244406BE00111220 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB5EF8244406BE00111220 /* Item.swift */; };
 		7A2CEB3DA3763B0339EC4D83 /* Pods_Endicott_EatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509CF68164CC333D04AB6E6F /* Pods_Endicott_EatsTests.framework */; };
 		EB76C93DC093CFF09BF8A045 /* Pods_Endicott_Eats_Endicott_EatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65434FAFCE65003B3D2748B /* Pods_Endicott_Eats_Endicott_EatsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,10 @@
 		4D66C316239AD586007DBAE5 /* myAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAccountViewController.swift; sourceTree = "<group>"; };
 		4DBC32AC238C239500C7EC50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		4DFB5EF42443FDEF00111220 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		4DFB5EF6244405F800111220 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		4DFB5EF8244406BE00111220 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		509CF68164CC333D04AB6E6F /* Pods_Endicott_EatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Endicott_EatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1D28B1EADD1D7161D74FAF /* Pods-Endicott EatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott EatsTests.debug.xcconfig"; path = "Target Support Files/Pods-Endicott EatsTests/Pods-Endicott EatsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		86B4B7E3F6256F275216CC0C /* Pods_Endicott_Eats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Endicott_Eats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,10 +178,14 @@
 			isa = PBXGroup;
 			children = (
 				4D4CFFB224180B69009BCAE9 /* ItemTableViewController.swift */,
+				4DFB5EF42443FDEF00111220 /* CartTableViewController.swift */,
 				4D66C316239AD586007DBAE5 /* myAccountViewController.swift */,
 				4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */,
+				4DFB5EF6244405F800111220 /* Order.swift */,
+				4DFB5EF8244406BE00111220 /* Item.swift */,
 				4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */,
 				4D4CFFB02418053A009BCAE9 /* ItemTableViewCell.swift */,
+				4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */,
 			);
 			path = Customers;
 			sourceTree = "<group>";
@@ -492,13 +504,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5D8B482412DAB500F179CC /* myDeliveriesViewController.swift in Sources */,
+				4DFB5EF52443FDEF00111220 /* CartTableViewController.swift in Sources */,
 				4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */,
 				4D4CFFB12418053A009BCAE9 /* ItemTableViewCell.swift in Sources */,
+				4DFB5EF9244406BE00111220 /* Item.swift in Sources */,
 				4D66C315239AD53A007DBAE5 /* myOrdersViewController.swift in Sources */,
 				4D66C313239AD2A8007DBAE5 /* OrderViewController.swift in Sources */,
+				4DFB5EF32443FDDC00111220 /* CartTableViewCell.swift in Sources */,
 				4D4CFFB324180B69009BCAE9 /* ItemTableViewController.swift in Sources */,
 				4D158427234660B400013029 /* AppDelegate.swift in Sources */,
 				4D5D8B4A2412DACF00F179CC /* myDeliveryAccountViewController.swift in Sources */,
+				4DFB5EF7244405F800111220 /* Order.swift in Sources */,
 				4D158429234660B400013029 /* SceneDelegate.swift in Sources */,
 				4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */,
 			);

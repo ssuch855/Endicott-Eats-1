@@ -14,6 +14,7 @@ class ItemTableViewController: UITableViewController {
     var diningData = [Item]()
     var diningOption : String?
     var cart = [Item]()
+    var total = 0.00
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
@@ -30,19 +31,13 @@ class ItemTableViewController: UITableViewController {
                 for document in querySnapshot!.documents {
                     let dataDescription = document.data()
                     let name = dataDescription["Name"] as? String ?? " "
-                    let price = dataDescription["Price"] as? String ?? " "
+                    let price = dataDescription["Price"] as? Double ?? 0.00
                     
                     self.diningData.append(Item.init(name: name, price: price))
                 }
             }
             self.table.reloadData()
         }
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,13 +63,24 @@ class ItemTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cart.append(diningData[indexPath.row])
+        
+        let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to add this item to your cart?", preferredStyle: .alert)
+
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
+            self.cart.append(self.diningData[indexPath.row])
+            self.total = self.total + self.diningData[indexPath.row].price
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
     }
     
     @IBAction func checkoutTapped(_ sender: UIBarButtonItem) {
         let display : CartTableViewController = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "goToCheckOut") as? CartTableViewController)!
         display.modalPresentationStyle = .fullScreen
         display.cart = cart
+        display.total = total
         display.diningOption = diningOption
         self.present(display, animated: true, completion: nil)
     }

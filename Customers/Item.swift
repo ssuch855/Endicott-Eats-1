@@ -6,14 +6,12 @@
 //  Copyright © 2019 Steve Suchcicki. All rights reserved.
 //
 
-import UIKit
-import Firebase
-
-class myDeliveriesViewController : UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+class Item{
+    var name: String
+    var price: Double
     
+    init(name: String, price: Double){
+        self.name = name
+        self.price = price
+    }
 }

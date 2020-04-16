@@ -17,20 +17,30 @@ class myAccountViewController : UIViewController {
     }
     
     @IBAction func driverTapped(_ sender: UIButton) {
-        let user = Auth.auth().currentUser
-        if let user = user {
-          let uid = user.uid
-            let db = Firestore.firestore()
-            db.collection("Users").document(uid).updateData([
-                "isDriver": true
-            ]) { err in
-                if let err = err {
-                    print("Error updating document: \(err)")
-                } else {
-                    print("Document successfully updated")
+        
+        let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to change to a driver?", preferredStyle: .alert)
+
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
+            let user = Auth.auth().currentUser
+            if let user = user {
+              let uid = user.uid
+                let db = Firestore.firestore()
+                db.collection("Users").document(uid).updateData([
+                    "isDriver": true
+                ]) { err in
+                    if let err = err {
+                        print("Error updating document: \(err)")
+                    } else {
+                        print("Document successfully updated")
+                    }
                 }
             }
-        }
+            self.performSegue(withIdentifier: "changeToDriver", sender: self)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
     }
     
     @IBAction func signOut(_ sender: UIButton) {

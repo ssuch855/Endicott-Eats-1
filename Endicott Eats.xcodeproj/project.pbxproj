@@ -17,12 +17,14 @@
 		4D15844B234660B500013029 /* Endicott_EatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15844A234660B500013029 /* Endicott_EatsUITests.swift */; };
 		4D4CFFB12418053A009BCAE9 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFFB02418053A009BCAE9 /* ItemTableViewCell.swift */; };
 		4D4CFFB324180B69009BCAE9 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4CFFB224180B69009BCAE9 /* ItemTableViewController.swift */; };
-		4D5D8B482412DAB500F179CC /* myDeliveriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D8B472412DAB500F179CC /* myDeliveriesViewController.swift */; };
+		4D5D8B482412DAB500F179CC /* myDeliveriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D8B472412DAB500F179CC /* myDeliveriesTableViewController.swift */; };
 		4D5D8B4A2412DACF00F179CC /* myDeliveryAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D8B492412DACF00F179CC /* myDeliveryAccountViewController.swift */; };
 		4D66C313239AD2A8007DBAE5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */; };
 		4D66C315239AD53A007DBAE5 /* myOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */; };
 		4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C316239AD586007DBAE5 /* myAccountViewController.swift */; };
+		4D75EEE7244545020088AEC7 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D75EEE6244545020088AEC7 /* OrdersTableViewCell.swift */; };
 		4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC32AC238C239500C7EC50 /* ViewController.swift */; };
+		4DDF84852447E36C008AF620 /* deliveryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF84842447E36B008AF620 /* deliveryItemsTableViewController.swift */; };
 		4DF312BF23E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
 		4DF312C023E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
 		4DF312C123E4C855000EC994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */; };
@@ -69,12 +71,14 @@
 		4D15844C234660B500013029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D4CFFB02418053A009BCAE9 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		4D4CFFB224180B69009BCAE9 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
-		4D5D8B472412DAB500F179CC /* myDeliveriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myDeliveriesViewController.swift; sourceTree = "<group>"; };
+		4D5D8B472412DAB500F179CC /* myDeliveriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myDeliveriesTableViewController.swift; sourceTree = "<group>"; };
 		4D5D8B492412DACF00F179CC /* myDeliveryAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myDeliveryAccountViewController.swift; sourceTree = "<group>"; };
 		4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		4D66C314239AD53A007DBAE5 /* myOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myOrdersViewController.swift; sourceTree = "<group>"; };
 		4D66C316239AD586007DBAE5 /* myAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAccountViewController.swift; sourceTree = "<group>"; };
+		4D75EEE6244545020088AEC7 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		4DBC32AC238C239500C7EC50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DDF84842447E36B008AF620 /* deliveryItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deliveryItemsTableViewController.swift; sourceTree = "<group>"; };
 		4DF312BE23E4C855000EC994 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		4DFB5EF42443FDEF00111220 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				4DFB5EF8244406BE00111220 /* Item.swift */,
 				4D66C312239AD2A8007DBAE5 /* OrderViewController.swift */,
 				4D4CFFB02418053A009BCAE9 /* ItemTableViewCell.swift */,
+				4D75EEE6244545020088AEC7 /* OrdersTableViewCell.swift */,
 				4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */,
 			);
 			path = Customers;
@@ -193,7 +198,8 @@
 		4D5D8B462412DA3A00F179CC /* Drivers */ = {
 			isa = PBXGroup;
 			children = (
-				4D5D8B472412DAB500F179CC /* myDeliveriesViewController.swift */,
+				4D5D8B472412DAB500F179CC /* myDeliveriesTableViewController.swift */,
+				4DDF84842447E36B008AF620 /* deliveryItemsTableViewController.swift */,
 				4D5D8B492412DACF00F179CC /* myDeliveryAccountViewController.swift */,
 			);
 			path = Drivers;
@@ -503,7 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5D8B482412DAB500F179CC /* myDeliveriesViewController.swift in Sources */,
+				4D5D8B482412DAB500F179CC /* myDeliveriesTableViewController.swift in Sources */,
 				4DFB5EF52443FDEF00111220 /* CartTableViewController.swift in Sources */,
 				4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */,
 				4D4CFFB12418053A009BCAE9 /* ItemTableViewCell.swift in Sources */,
@@ -516,6 +522,8 @@
 				4D5D8B4A2412DACF00F179CC /* myDeliveryAccountViewController.swift in Sources */,
 				4DFB5EF7244405F800111220 /* Order.swift in Sources */,
 				4D158429234660B400013029 /* SceneDelegate.swift in Sources */,
+				4DDF84852447E36C008AF620 /* deliveryItemsTableViewController.swift in Sources */,
+				4D75EEE7244545020088AEC7 /* OrdersTableViewCell.swift in Sources */,
 				4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

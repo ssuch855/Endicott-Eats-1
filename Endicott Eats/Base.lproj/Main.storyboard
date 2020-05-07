@@ -390,6 +390,67 @@
             </objects>
             <point key="canvasLocation" x="2545" y="359"/>
         </scene>
+        <!--View Items Table View Controller-->
+        <scene sceneID="ZaN-kr-LNk">
+            <objects>
+                <tableViewController storyboardIdentifier="viewItems" id="r1z-Qf-C4F" customClass="ViewItemsTableViewController" customModule="Endicott_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wNa-0w-10Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NKX-Rn-Fw4">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="backTapped:" destination="r1z-Qf-C4F" eventType="touchUpInside" id="VkH-X8-nuP"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="147" id="yhK-29-qbH" customClass="ViewItemsTableViewCell" customModule="Endicott_Eats" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="147"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yhK-29-qbH" id="0w7-Ad-gVB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY4-qU-e3f">
+                                            <rect key="frame" x="28" y="31" width="77" height="85"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VY4-qU-e3f" firstAttribute="top" secondItem="0w7-Ad-gVB" secondAttribute="topMargin" constant="20" id="QGg-NR-yeC"/>
+                                        <constraint firstItem="VY4-qU-e3f" firstAttribute="leading" secondItem="0w7-Ad-gVB" secondAttribute="leadingMargin" constant="8" id="lUR-f8-qtE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VY4-qU-e3f" secondAttribute="bottom" constant="20" id="vzZ-Oi-E2d"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="Name" destination="VY4-qU-e3f" id="jLY-En-MUp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="r1z-Qf-C4F" id="824-sX-0dg"/>
+                            <outlet property="delegate" destination="r1z-Qf-C4F" id="WRW-QQ-OHh"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="gsg-BM-dai" kind="presentation" identifier="backTapped" modalPresentationStyle="fullScreen" id="glH-QT-CO9"/>
+                        <segue destination="2qK-kk-a5W" kind="presentation" identifier="backTappedDriver" modalPresentationStyle="fullScreen" id="feb-Bj-N3T"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFL-xO-Cxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3672.4637681159425" y="970.98214285714278"/>
+        </scene>
         <!--Orders-->
         <scene sceneID="bT9-FL-M0r">
             <objects>
@@ -478,6 +539,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-LA-W1X">
+                                            <rect key="frame" x="302" y="132" width="43" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="View"/>
+                                            <connections>
+                                                <action selector="viewTapped:" destination="NgD-SW-MuB" eventType="touchUpInside" id="sPG-u9-QPF"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="7ul-JX-SH3" firstAttribute="top" secondItem="O1w-cz-uid" secondAttribute="bottom" constant="8" id="2IX-6E-W3u"/>
@@ -675,7 +745,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Delivery Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-wJ-5WY">
-                                            <rect key="frame" x="192" y="40" width="150" height="24"/>
+                                            <rect key="frame" x="192" y="40" width="150" height="23"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -704,6 +774,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hce-AS-jmA">
+                                            <rect key="frame" x="301" y="129" width="43" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="View"/>
+                                            <connections>
+                                                <action selector="viewClicked:" destination="s52-Gm-NB7" eventType="touchUpInside" id="A6a-mP-5Zr"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="PA0-Lg-nqf" secondAttribute="trailing" constant="280.5" id="26J-Mx-esL"/>
@@ -767,7 +846,6 @@
                     <connections>
                         <outlet property="mySegment" destination="oPb-9w-KXg" id="d54-lE-VTV"/>
                         <outlet property="myTable" destination="0bT-oL-AWD" id="Jsu-AS-g6i"/>
-                        <segue destination="bVp-OM-6Bd" kind="presentation" modalPresentationStyle="overFullScreen" id="TVG-lu-MPF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCI-SK-WdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -871,9 +949,9 @@
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F3X-XO-pRh"/>
+        <segue reference="glH-QT-CO9"/>
         <segue reference="xZ1-7y-FfG"/>
-        <segue reference="4xw-X3-iOq"/>
+        <segue reference="feb-Bj-N3T"/>
         <segue reference="Q0y-7p-r9u"/>
     </inferredMetricsTieBreakers>
 </document>

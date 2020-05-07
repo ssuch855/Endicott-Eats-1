@@ -19,6 +19,7 @@ class ItemTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.cart.removeAll()
         table.delegate = self
         table.dataSource = self
         

@@ -35,6 +35,7 @@ class myDeliveriesTableViewController : UITableViewController {
                     let dataDescription = document.data()
                     if dataDescription["Delivery Driver"] as? String == "None"{
                         let items = dataDescription["Items"] as? Array<Any>
+                        self.myCurrentItems.removeAll()
                         
                         for item in items!{
                             self.myCurrentItems.append(Item.init(name: item as! String, price: 0.0))
@@ -51,6 +52,7 @@ class myDeliveriesTableViewController : UITableViewController {
                     }
                     else if (dataDescription["Delivery Driver"] as? String == Auth.auth().currentUser?.uid) && (dataDescription["Stage"] as? String != "Completed") {
                         let items = dataDescription["Items"] as? Array<Any>
+                        self.myPastItems.removeAll()
                         
                         for item in items!{
                             self.myPastItems.append(Item.init(name: item as! String, price: 0.0))
@@ -72,7 +74,6 @@ class myDeliveriesTableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(mySegment.selectedSegmentIndex)
         let db = Firestore.firestore()
         
         if mySegment.selectedSegmentIndex == 0{
@@ -82,6 +83,8 @@ class myDeliveriesTableViewController : UITableViewController {
             
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) in
                 db.collection("Orders").document(self.availableOrderIDs[indexPath.row]).updateData(["Delivery Driver": Auth.auth().currentUser?.uid])
+                self.myCurrentOrderIDs.append(self.availableOrderIDs[indexPath.row])
+                self.availableOrderIDs.remove(at: indexPath.row)
                 self.myCurrentOrders.append(self.availableOrders[indexPath.row])
                 self.availableOrders.remove(at: indexPath.row)
                 self.myTable.reloadData()
@@ -91,6 +94,7 @@ class myDeliveriesTableViewController : UITableViewController {
             self.present(alert, animated: true)
         }
         else{
+            
             if self.myCurrentOrders[indexPath.row].stage == "Ordered"{
                 let alert = UIAlertController(title: "Change", message: "What status would you like to change this order to?", preferredStyle: .alert)
 
@@ -104,6 +108,7 @@ class myDeliveriesTableViewController : UITableViewController {
                     self.myCurrentOrders[indexPath.row].stage = "On The Way"
                     self.myTable.reloadData()
                 }))
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 self.present(alert, animated: true)
             }
             else{
@@ -119,7 +124,7 @@ class myDeliveriesTableViewController : UITableViewController {
                 self.present(alert, animated: true)
             }
         }
-    
+        self.myTable.reloadData()
     }
     
     @IBAction func valueChanged(_ sender: Any) {
@@ -164,5 +169,23 @@ class myDeliveriesTableViewController : UITableViewController {
         }
 
         return cell
+    }
+    
+    @IBAction func viewClicked(_ sender: UIButton) {
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at:buttonPosition)
+        let display : ViewItemsTableViewController = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "viewItems") as? ViewItemsTableViewController)!
+        display.modalPresentationStyle = .fullScreen
+        
+        if self.mySegment.selectedSegmentIndex == 0{
+            display.items = self.availableOrders[indexPath!.row].items
+        }
+        else {
+            display.items = self.myCurrentOrders[indexPath!.row].items
+        }
+        
+        display.cameFrom = "driver"
+        
+        self.present(display, animated: true, completion: nil)
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2247F1247B9CB3A1DDC01E83 /* Pods_Endicott_Eats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B4B7E3F6256F275216CC0C /* Pods_Endicott_Eats.framework */; };
+		4D06CCCD2463C25700027905 /* ViewItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06CCCC2463C25700027905 /* ViewItemsTableViewCell.swift */; };
+		4D06CCCF2463C26F00027905 /* ViewItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06CCCE2463C26F00027905 /* ViewItemsTableViewController.swift */; };
 		4D158427234660B400013029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D158426234660B400013029 /* AppDelegate.swift */; };
 		4D158429234660B400013029 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D158428234660B400013029 /* SceneDelegate.swift */; };
 		4D158430234660B400013029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D15842E234660B400013029 /* Main.storyboard */; settings = {ASSET_TAGS = (sign_up, ); }; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		006F1CA7A91F9B700C800650 /* Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Endicott Eats-Endicott EatsUITests/Pods-Endicott Eats-Endicott EatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		23BFF40BF03C11C6CBAD7264 /* Pods-Endicott Eats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Endicott Eats.debug.xcconfig"; path = "Target Support Files/Pods-Endicott Eats/Pods-Endicott Eats.debug.xcconfig"; sourceTree = "<group>"; };
+		4D06CCCC2463C25700027905 /* ViewItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsTableViewCell.swift; sourceTree = "<group>"; };
+		4D06CCCE2463C26F00027905 /* ViewItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsTableViewController.swift; sourceTree = "<group>"; };
 		4D158423234660B400013029 /* Endicott Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Endicott Eats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D158426234660B400013029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D158428234660B400013029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				4D4CFFB02418053A009BCAE9 /* ItemTableViewCell.swift */,
 				4D75EEE6244545020088AEC7 /* OrdersTableViewCell.swift */,
 				4DFB5EF22443FDDC00111220 /* CartTableViewCell.swift */,
+				4D06CCCC2463C25700027905 /* ViewItemsTableViewCell.swift */,
+				4D06CCCE2463C26F00027905 /* ViewItemsTableViewController.swift */,
 			);
 			path = Customers;
 			sourceTree = "<group>";
@@ -514,6 +520,7 @@
 				4DBC32AD238C239500C7EC50 /* ViewController.swift in Sources */,
 				4D4CFFB12418053A009BCAE9 /* ItemTableViewCell.swift in Sources */,
 				4DFB5EF9244406BE00111220 /* Item.swift in Sources */,
+				4D06CCCF2463C26F00027905 /* ViewItemsTableViewController.swift in Sources */,
 				4D66C315239AD53A007DBAE5 /* myOrdersViewController.swift in Sources */,
 				4D66C313239AD2A8007DBAE5 /* OrderViewController.swift in Sources */,
 				4DFB5EF32443FDDC00111220 /* CartTableViewCell.swift in Sources */,
@@ -523,6 +530,7 @@
 				4DFB5EF7244405F800111220 /* Order.swift in Sources */,
 				4D158429234660B400013029 /* SceneDelegate.swift in Sources */,
 				4DDF84852447E36C008AF620 /* deliveryItemsTableViewController.swift in Sources */,
+				4D06CCCD2463C25700027905 /* ViewItemsTableViewCell.swift in Sources */,
 				4D75EEE7244545020088AEC7 /* OrdersTableViewCell.swift in Sources */,
 				4D66C317239AD586007DBAE5 /* myAccountViewController.swift in Sources */,
 			);

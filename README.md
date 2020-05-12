@@ -6,6 +6,7 @@ On GitHub go to clone or download and copy the repository URL
 
 In Xcode, upon opening click on the prompt clone an existing project and paste the repository URL in the search bar at the top and hit clone.
 
+-----------------------------------------------------------------------------------------
 ## Customers Folder
 This is where all the controllers and cells contributing to the customer view are located
 
@@ -44,7 +45,7 @@ This is where all the controllers and cells contributing to the customer view ar
   
   ## myOrdersViewController.swift
   Controls the logic and set up for displaying each of the current user's orders
-  
+-----------------------------------------------------------------------------------------
 ## Drivers Folder
 This is where all the controllers and cells contributing to the driver view are located
 
@@ -53,7 +54,7 @@ This is where all the controllers and cells contributing to the driver view are 
   
   ## myDeliveryAccountViewController.swift
   Controls the logic for the buttons on the account screen
-  
+-----------------------------------------------------------------------------------------  
 ## Endicott Eats Folder
 
   ## AppDelegate.swift
